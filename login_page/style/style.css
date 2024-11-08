@@ -1,0 +1,108 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+}
+body{
+    font-family: "poppins";
+    background-color: #080710;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+input,button{
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
+.wrapper{
+    width: 400px;
+    height: auto;
+    position: relative;
+}
+
+.shape{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.shape--one{
+    background: linear-gradient(45deg,#0d47a1,#42a5f5);
+    top: -80px;
+    left: -118px;
+}
+.shape--two{
+    background: linear-gradient(45deg,#e65100,#ffa726);
+    bottom: -90px;
+    right: -110px 
+}
+.form{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(225,225,225, 0.13);
+    color: white;
+    padding: 50px 35px 35px 35px;
+    border: 2px solid rgba(225,225,225, 0.13);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0,0.5);
+    backdrop-filter: blur(10px);
+}
+.form__title{
+    text-align: center;
+    font-size: 32px;
+}
+.form__label{
+    font-size: 16px;
+    display: block;
+    padding-top: 25px;
+    font-weight: 600;
+}
+.form__input{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(225,225,225, 0.13);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 2px rgba(225,225,225, 0.13);
+    color: #fff;
+}
+.form__inpu::placeholder{
+    color: #e5e5e5;
+}
+.form__submit-btn{
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    color: #080710;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: block;
+    font-weight: bold;
+}
